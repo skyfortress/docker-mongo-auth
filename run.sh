@@ -1,7 +1,7 @@
 #!/bin/bash
 set -m
 
-mongodb_cmd="mongod"
+mongodb_cmd="mongod -f /etc/mongod.conf"
 cmd="$mongodb_cmd"
 
 if [ "$AUTH" == "yes" ]; then
